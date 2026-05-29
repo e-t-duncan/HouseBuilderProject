@@ -11,4 +11,11 @@ public class AreaCalculator {
     public double getFloorArea() {
         return houseModel.getCurrentWidth() * houseModel.getCurrentLength();
     }
+
+    public double getWallArea(){
+        double northWalls = houseModel.getCurrentLength() * houseModel.getCurrentHeight() *2;
+        double southWalls = houseModel.getCurrentWidth() * houseModel.getCurrentHeight() *2;
+
+        return southWalls+northWalls;
+    }
 }

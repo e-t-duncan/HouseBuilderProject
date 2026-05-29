@@ -16,4 +16,9 @@ public class PriceCalculator {
         var area = BigDecimal.valueOf(areaCalculator.getFloorArea());
         return area.multiply(priceDefinition.getFloorPrice());
     }
+
+    public BigDecimal getWallPrice(){
+        var wallArea = BigDecimal.valueOf(areaCalculator.getWallArea());
+        return wallArea.multiply(priceDefinition.getWallPrice());
+    }
 }
